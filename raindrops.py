@@ -5,4 +5,14 @@ def convert(number):
 'Plong', если число number делится на 7,
 само число number, если оно не делится ни на 3, ни на 5, ни на 7."""
     # Напишите ваш код здесь
-    return str(number) # эту строку можно удалить
+    s=''
+    if number%3==0:
+        s+='Pling'
+    if number%5==0:
+        s+='Plang'
+    if number%7==0:
+        s+='Plong'
+    if s=='':
+        a=str(number)
+        s+=a
+    return s    
